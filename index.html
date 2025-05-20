@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+      }
+      button {
+        transition: all 0.3s ease;
+      }
+      button-hover:hover {
+        background-color: #4a90e2;
+        color: white;
+      }
+    </style>
+  </head>
+  <body
+    class="flex w-full place-items-center justify-center min-h-screen bg-gray-100"
+  >
+    <button
+      onclick="alert('Button clicked!')"
+      class="bg-blue-300 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 relative group h-12 w-48 overflow-hidden text-lg shadow duration-100"
+    >
+      <div
+        class="inset-0 w-3 absolute transition-all duration-[30ms] ease-out group-hover:w-full"
+      ></div>
+      <span class="relative text-black group-hover:text-white">CLICK ME!</span>
+    </button>
+  </body>
+</html>
